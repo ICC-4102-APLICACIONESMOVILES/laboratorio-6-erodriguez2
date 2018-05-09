@@ -1,0 +1,116 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.eduardo.lab1.Fragments.AddFormFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/nameFormTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/nameFormContent"
+            android:text="Nombre"
+            android:layout_margin="5dp"/>
+
+        <EditText
+            android:id="@+id/nameFormContent"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nameFormTitle"
+            app:layout_constraintBottom_toTopOf="@id/dateFormTitle"
+            android:background="@color/white"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/dateFormTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nameFormContent"
+            app:layout_constraintBottom_toTopOf="@id/dateFormContent"
+            android:text="Fecha"
+            android:layout_margin="5dp"/>
+
+        <EditText
+            android:id="@+id/dateFormContent"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dateFormTitle"
+            app:layout_constraintBottom_toTopOf="@id/categoryFormTitle"
+            android:background="@color/white"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/categoryFormTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dateFormContent"
+            app:layout_constraintBottom_toTopOf="@id/categoryFormContent"
+            android:text="Categoria"
+            android:layout_margin="5dp"/>
+
+        <Spinner
+            android:id="@+id/categoryFormContent"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/categoryFormTitle"
+            app:layout_constraintBottom_toTopOf="@id/commentaryFormTitle"
+            android:background="@color/white"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/commentaryFormTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/categoryFormContent"
+            app:layout_constraintBottom_toTopOf="@id/commentaryFormContent"
+            android:text="Comentario"
+            android:layout_margin="5dp"/>
+
+        <EditText
+            android:id="@+id/commentaryFormContent"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/commentaryFormTitle"
+            app:layout_constraintBottom_toTopOf="@id/addFormButton"
+            android:background="@color/white"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/addFormButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toBottomOf="@id/commentaryFormContent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Agregar"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

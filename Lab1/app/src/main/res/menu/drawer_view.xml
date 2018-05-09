@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/titleItem"
+        android:title="Formularios"/>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_add_form"
+            android:icon="@drawable/ic_menu_add"
+            android:title="@string/add_form" />
+        <item
+            android:id="@+id/nav_all_forms"
+            android:icon="@drawable/ic_menu_all_files"
+            android:title="@string/all_forms" />
+        <item
+            android:id="@+id/nav_resumen"
+            android:icon="@drawable/ic_menu_resumen"
+            android:title="@string/resumen" />
+
+    </group>
+</menu>
